@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+}
+
+.header-form {
+    align-items: center;
+    justify-content: center;
+}
+
+.header-inpu-search {
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item {
+    text-decoration: none;
+    margin-right: 30px;
+    color: white;
+}

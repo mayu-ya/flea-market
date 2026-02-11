@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 30px;
+}

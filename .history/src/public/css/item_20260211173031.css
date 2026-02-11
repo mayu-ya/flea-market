@@ -1,0 +1,43 @@
+.content {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.content-infoemation {
+    width: 50%;
+}
+
+.form, .form-comment {
+    width: 100%;
+}
+
+.information-span, .comment-span {
+    font-weight: bold;
+}
+
+.button-submit {
+    font-size: 17px;
+    padding: 10px 0;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background: orangered;
+    cursor: pointer;
+}
+
+.comment {
+    color: darkgray;
+}
+
+.comment-button-submit {
+    font-size: 17px;
+    padding: 10px 0;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background: orangered;
+    cursor: pointer;
+}

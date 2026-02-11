@@ -1,0 +1,27 @@
+.form {
+    width: 70%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-submit {
+    font-size: 17px;
+    padding: 10px 0;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background: orangered;
+    cursor: pointer;
+}
+
+
+
+.button-b {
+    text-align: right;
+    margin-bottom: 20px;
+}
