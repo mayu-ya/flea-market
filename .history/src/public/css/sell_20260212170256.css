@@ -1,0 +1,53 @@
+.form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.title {
+    width: 100%;
+}
+
+.title-logo {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.content {
+    width: 100%;
+}
+
+
+.title-h {
+    color: darkgray;
+    border-bottom: 1px solid darkgray;
+}
+
+.content-input {
+    appearance: none;
+    border: 2px solid orangered;
+    border-radius: 50%;
+}
+
+.condition {
+    width: 100%;
+}
+
+.content-text {
+    width: 100%;
+}
+
+.content-textarea {
+    width: 100%;
+}
+
+.button-submit {
+    width: 100%;
+    margin-top: 50px;
+    font-size: 17px;
+    padding: 10px 0;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background: orangered;
+    cursor: pointer;
+}

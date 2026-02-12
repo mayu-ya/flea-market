@@ -7,11 +7,12 @@
 @section('content')
 <form class="form">
     <div class="title">
-        <h1 class="title-h">商品の出品</h1>
+        <h1 class="title-logo">商品の出品</h1>
     </div>
     <div class="content">
         <h3 class="content-h">商品画像</h3>
-        <input type="text" class="content-img">
+        <img class="content-img" src="" alt="商品画像">
+        <input type="file" class="content-fifle">
     </div>
 
     <div class="detail">
@@ -19,24 +20,24 @@
     </div>
     <div class="content">
         <h3 class="content-h">カテゴリー</h3>
-        <input type="checkbox" class="content-input">ファッション
-        <input type="checkbox" class="content-input">家電
-        <input type="checkbox" class="content-input">インテリア
-        <input type="checkbox" class="content-input">レディース
-        <input type="checkbox" class="content-input">メンズ
-        <input type="checkbox" class="content-input">コスメ
-        <input type="checkbox" class="content-input">本
-        <input type="checkbox" class="content-input">ゲーム
-        <input type="checkbox" class="content-input">スポーツ
-        <input type="checkbox" class="content-input">キッチン
-        <input type="checkbox" class="content-input">ハンドメイド
-        <input type="checkbox" class="content-input">アクセサリー
-        <input type="checkbox" class="content-input">おもちゃ
-        <input type="checkbox" class="content-input">ベビー・キッズ
+        <label><input type="checkbox"><span>ファッション</span></label>
+        <label><input type="checkbox"><span>家電</span></label>
+        <label><input type="checkbox"><span>インテリア</span></label>
+        <label><input type="checkbox"><span>レディース</span></label>
+        <label><input type="checkbox"><span>メンズ</span></label>
+        <label><input type="checkbox"><span>コスメ</span></label>
+        <label><input type="checkbox"><span>本</span></label>
+        <label><input type="checkbox"><span>ゲーム</span></label>
+        <label><input type="checkbox"><span>スポーツ</span></label>
+        <label><input type="checkbox"><span>キッチン</span></label>
+        <label><input type="checkbox"><span>ハンドメイド</span></label>
+        <label><input type="checkbox"><span>アクセサリー</span></label>
+        <label><input type="checkbox"><span>おもちゃ</span></label>
+        <label><input type="checkbox"><span>ベビー・キッズ</span></label>
     </div>
     <div class="content">
         <h3 class="content-h">商品の状態</h3>
-        <select name="condition">
+        <select class="content-condition" name="condition">
             <option value="">選択してください</option>
             <option value="">良好</option>
             <option value="">目立った外傷なし</option>

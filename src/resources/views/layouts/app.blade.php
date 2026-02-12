@@ -16,7 +16,7 @@
             </div>
             <form class="header-form">
                 <div class="header-input">
-                    <input type="search" class="header-inpu-search">
+                    <input type="search" class="header-inpu-search" placeholder="なにをお探しですか？">
                 </div>
             </form>
             <nav class="nav">
