@@ -1,0 +1,47 @@
+.form {
+    width: 40%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.form-title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.form-content {
+    margin-bottom: 25px;
+}
+
+.form-span {
+    font-weight: bold;
+}
+
+.form-error {
+    color: red;
+}
+
+.form-input-text {
+    width: 100%;
+    height: 40px;
+}
+
+.form-button-submit {
+    width: 100%;
+    margin-top: 50px;
+    font-size: 17px;
+    padding: 10px 0;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background: orangered;
+    cursor: pointer;
+}
+
+.form-a {
+    text-align: center;
+}
+
+.form-a-register {
+    text-decoration: none;
+}
