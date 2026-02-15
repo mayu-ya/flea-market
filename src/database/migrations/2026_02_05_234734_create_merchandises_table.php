@@ -17,7 +17,7 @@ class CreateMerchandisesTable extends Migration
             $table->id();
             $table->string('image');
             $table->string('merchandise_name');
-            $table->string('brand_name');
+            $table->string('brand_name')->nullable();
             $table->integer('price');
             $table->text('explanation');
             $table->tinyInteger('condition');

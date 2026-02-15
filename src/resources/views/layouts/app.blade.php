@@ -12,7 +12,7 @@
     <header>
         <div class="header">
             <div class="header-inner">
-                <img src="../img/logo.png" alt="COACHTECHヘッダーロゴ" class="header-logo">
+                <a href="/"><img src="../img/logo.png" alt="COACHTECHヘッダーロゴ" class="header-logo"></a>
             </div>
             <form class="header-form">
                 <div class="header-input">
