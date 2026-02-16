@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+
+.header-logo {
+    margin: 10px;
+}
+
+.header-inpu-search {
+    width: 450px;
+    height: 45px;
+    margin: 10px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.button-logout {
+    margin-right: 30px;
+    color: white;
+}
+
+.header-a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: white;
+}
+
+.header-a-sell {
+    text-decoration: none;
+    margin-right: 30px;
+    padding: 5px 25px;
+    color: black;
+    background: white;
+}
