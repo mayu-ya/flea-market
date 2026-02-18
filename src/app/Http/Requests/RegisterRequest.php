@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class RegisterRequest extends FormRequest
 {
@@ -13,7 +14,7 @@ class RegisterRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,9 +26,9 @@ class RegisterRequest extends FormRequest
     {
         return [
             'user_name' => ['required', 'max:20'],
-            'email' => ['required', 'email'],
+            'email' => ['required', 'email', Rule::unique(User::class)],
             'password' => ['required', 'min:8'],
-            'password_confirmation' => ['required', 'min:8'],
+            'password_confirmation' => ['required', 'min:8', 'confirmed'],
         ];
     }
 
@@ -36,10 +37,10 @@ class RegisterRequest extends FormRequest
         return [
             'user_name.required' => 'お名前を入力してください',
             'email.required' => 'メールアドレスを入力してください',
-            'email.email' => 'メールアドレスはメール形式で入力してください'
+            'email.email' => 'メールアドレスはメール形式で入力してください',
             'password.required' => 'パスワードを入力してください',
             'password.min' => 'パスワードは8文字以上で入力してください',
-            'password.' => 'パスワードと一致しません',
+            'password.confirmed' => 'パスワードと一致しません',
         ];
     }
 }

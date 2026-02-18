@@ -15,13 +15,9 @@
         <div class="form-content">
             <span class="form-span">ユーザー名</span>
             <div class="form-error">
-                @if($errors->any())
-                <ul>
-                    @foreach($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                    @endforeach
-                </ul> 
-                @endif
+                @error('user_name')
+                {{ $message }}
+                @enderror
             </div>
             <div class="form-input">
                 <input type="text" class="form-input-text" name="user_name" value="{{ old('user_name') }}">
@@ -30,7 +26,9 @@
         <div class="form-content">
             <span class="form-span">メールアドレス</span>
             <div class="form-error">
-                // 
+                @error('email')
+                {{ $message }}
+                @enderror
             </div>
             <div class="form-input">
                 <input type="email" class="form-input-text" name="email" value="{{ old('email') }}">
@@ -39,7 +37,9 @@
         <div class="form-content">
             <span class="form-span">パスワード</span>
             <div class="form-error">
-                // 
+                @error('password')
+                {{ $message }}
+                @enderror 
             </div>
             <div class="form-input">
                 <input type="password" class="form-input-text" name="password">
@@ -48,7 +48,9 @@
         <div class="form-content">
             <span class="form-span">確認用パスワード</span>
             <div class="form-error">
-                // 
+                @error('password_confirmation')
+                {{ $message }}
+                @enderror 
             </div>
             <div class="form-input">
                 <input type="password" class="form-input-text" name="password_confirmation">

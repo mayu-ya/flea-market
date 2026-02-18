@@ -22,6 +22,14 @@ class FortifyServiceProvider extends ServiceProvider
     {
         //
     }
+    
+    public function login(): void
+    {
+        $this->app->singleton(
+            \Laravel\Fortify\Http\Requests\LoginRequest::class,
+            \app\Http\Requests\LoginRequest::class
+        );
+    }
 
     /**
      * Bootstrap any application services.

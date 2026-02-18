@@ -14,16 +14,20 @@
     <div class="form-content">
         <span class="form-span">メールアドレス</span>
         <div class="form-error">
-            // 
+            @error('email')
+            {{ $message }}
+            @enderror 
         </div>
         <div class="form-input">
-            <input type="email" class="form-input-text" value="{{ old('email') }}">
+            <input type="email" name="email" class="form-input-text" value="{{ old('email') }}">
         </div>
     </div>
     <div class="form-content">
         <span class="form-span">パスワード</span>
         <div class="form-error">
-            // 
+            @error('password')
+            {{ $message }}
+            @enderror
         </div>
         <div class="form-input">
             <input type="password" class="form-input-text" name="password">
