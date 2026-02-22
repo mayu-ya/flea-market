@@ -11,9 +11,11 @@
     </div>
 
     <form class="form-img">
-        <div class="img"></div>
-        <div class="img-button">
-            <button class="img-button-submit">画像を選択する</button>
+        <div class="img">
+            <img src="" class="img-picture">
+        </div>
+        <div class="img-input">
+            <input type="file" class="img-input-file"><label>画像を選択する</label>
         </div>
     </form>
 

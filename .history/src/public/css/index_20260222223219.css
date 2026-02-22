@@ -1,0 +1,49 @@
+.form-category {
+    display: flex;
+    border-bottom: 1px solid darkgray;
+}
+
+label input {
+	appearance: none;
+    margin-bottom: 50px;
+}
+
+label span {
+	font-size: 20px;
+    font-weight: bold;
+	padding: 5px 20px;
+}
+
+label input:checked + span {
+	color: orangered;
+    font-weight: bold;
+}
+
+.form-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.form-img {
+    width: 200px;
+    height: 200px;
+    background: #ddd;
+}
+
+.font {
+    display: flex;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.sold-p {
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    background: red;
+    color: white;
+}

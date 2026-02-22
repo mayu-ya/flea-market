@@ -11,7 +11,23 @@
 
 .form-img {
     display: flex;
+    align-items: center;
     margin: 40px 0;
+}
+
+.img-picture {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+.img-input-file {
+    padding: 5px 10px;
+    margin-left: 20px;
+    background: white;
+    color: orangered;
+    border: 1px solid orangered;
 }
 
 .form-content {

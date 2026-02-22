@@ -27,8 +27,8 @@
                             <button type="submit" class="button-logout">ログアウト</button>
                         </form>
                     </li>
-                    <li><a href="/mypage" class="header-a">マイページ</a></li>
-                    <li><a href="/sell" class="header-a-sell">出品</a></li>
+                    <li><a href="{{ route('mypage.index') }}" class="header-a">マイページ</a></li>
+                    <li><a href="{{ route('sell.index') }}" class="header-a-sell">出品</a></li>
                     @endif
                 </ul>
             </nav>
