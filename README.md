@@ -33,4 +33,4 @@
 
 ## ER図
 
-<img width="707" height="689" alt="2026-02-15" src="https://github.com/user-attachments/assets/af50e917-e6ac-4e08-b8b9-fcdbc1baffe5" />
+<img width="676" height="685" alt="image" src="https://github.com/user-attachments/assets/d368b07e-cb27-4293-8d71-1ecbb28323cf" />
