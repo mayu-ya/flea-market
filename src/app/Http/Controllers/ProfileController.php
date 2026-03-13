@@ -17,19 +17,25 @@ class ProfileController extends Controller
 
     public function upsert(ProfileRequest $request)
     {
-        $profile = $request->only(['profile_img', 'name', 'post_code', 'address', 'building']);
+        $profile = $request->except('profile_img');
+        $image = $request->file('profile_img');
+        if($image) {
+           $profile_path = $image->store('public/profile');
+           $path = str_replace('public/', 'storage/', $profile_path);
+        }
+
         $profile = Profile::updateOrCreate(
             ['user_id' => auth()->Id()],
             [
                 'user_id' => auth()->id(),
-                // 'profile_img' => $profile['profile_img'],
                 'name' => $profile['name'],
                 'post_code' => $profile['post_code'],
                 'address' => $profile['address'],
                 'building' => $profile['building'],
+                'profile_img' => $path,
             ]
         );
 
-        return redirect('mypage');
+        return redirect('mypage', compact('data'));
     }
 }

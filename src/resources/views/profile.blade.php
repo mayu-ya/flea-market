@@ -10,14 +10,14 @@
         <h1 class="title-h">プロフィール設定</h1>
     </div>
 
-    <form class="form" action="/mypage" method="post">
+    <form class="form" action="/mypage" method="post" enctype="multipart/form-data">
         @csrf
         <div class="form-img">
             <div class="img">
                 <img src="" class="img-picture">
             </div>
             <div class="img-input">
-                <input type="file" class="img-input-file"><label>画像を選択する</label>
+                <input type="file" class="img-input-file" name="profile_img"><label>画像を選択する</label>
             </div>
         </div>
 
