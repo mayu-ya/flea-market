@@ -1,0 +1,56 @@
+.form-category {
+    display: flex;
+    border-bottom: 1px solid darkgray;
+}
+
+.category-a {
+    text-decoration: none;
+}
+
+.category {
+    color: orangered;
+    margin-left: 25px;
+}
+
+.category-mylist {
+    color: darkgray;
+    margin-left: 25px;
+}
+
+.form-list {
+    margin: 0 auto;
+    align-items: center;
+    width: 90%;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+.form-img {
+    width: 200px;
+    height: 200px;
+    background: #ddd;
+}
+
+.font {
+    display: flex;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.sold-p {
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    background: red;
+    color: white;
+}
