@@ -17,11 +17,11 @@ class Purchase extends Model
 
     public function profile()
     {
-        return $this->belongTo(profile::class);
+        return $this->belongTo(Profile::class);
     }
 
     public function merchandise()
     {
-        return $this->belongTo(merchandise::class);
+        return $this->hasOne(Merchandise::class);
     }
 }
