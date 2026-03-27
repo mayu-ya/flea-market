@@ -16,7 +16,7 @@ class CreateMerchandisesTable extends Migration
         Schema::create('merchandises', function (Blueprint $table) {
             $table->id();
             $table->foreignId('profile_id')->constrained()->cascadeOnDelete();
-            $table->string('image')->nullable();
+            $table->string('image');
             $table->string('merchandise_name');
             $table->string('brand_name')->nullable();
             $table->integer('price');
