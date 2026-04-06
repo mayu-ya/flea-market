@@ -27,4 +27,12 @@ class CommentRequest extends FormRequest
             'contact' => ['required', 'max:255']
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'contact.required' => 'コメントを入力してください',
+            'contacy.max' => 'コメントは255文字以下で入力してください',
+        ]
+    }
 }
