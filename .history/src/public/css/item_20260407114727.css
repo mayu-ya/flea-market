@@ -1,0 +1,116 @@
+.content {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.form-img {
+    margin: 0 auto;
+    width: 50%;
+    height: 80%;
+}
+
+.img-unlike, .img-like, .img-comment {
+    width: 5%;
+    height: 5%;
+}
+
+.img-span {
+    text-decoration: none;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.img-picture {
+    width: 90%;
+    height: 90%;
+    background: #ddd;
+    margin-top: 30px;
+}
+
+.content-infoemation {
+    width: 50%;
+}
+
+.form-comment {
+    margin-top: 35px;
+}
+
+.form, .form-comment {
+    width: 100%;
+}
+
+.information-span {
+    margin-right: 20px;
+}
+
+.information-span, .comment-span {
+    font-weight: bold;
+}
+
+.information-input {
+    font-size: 25px;
+    outline: none;
+    border: none;
+}
+
+.explan-textarea {
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.button {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.button-a {
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background: orangered;
+    cursor: pointer;
+}
+
+.comment {
+    color: darkgray;
+}
+
+.profile-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.profile-input {
+    outline: none;
+    border: none;
+}
+
+.error {
+    color: red;
+}
+
+.comment-textarea {
+    width: 100%;
+    height: 150px;
+}
+
+.comment-button-submit {
+    font-size: 17px;
+    padding: 10px 0;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background: orangered;
+    cursor: pointer;
+}

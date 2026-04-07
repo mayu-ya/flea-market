@@ -1,0 +1,111 @@
+.form {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.item-img {
+    width: 200px;
+    height: 200px;
+    background: #ddd;
+    margin-bottom: 10px;
+}
+
+.content-item {
+    display: flex;
+}
+
+.item-input {
+    margin: 10px 20px;
+}
+
+.input {
+    outline: none;
+    border: none;
+    font-size: 23px;
+}
+
+.content-item, .pay, .address {
+    width: 55%;
+    border-bottom: 1px solid darkgray;
+}
+
+.table, .button {
+    width: 40%;
+}
+
+.table-tr {
+    border: 1px solid darkgray;
+}
+
+.table-th, .table-td {
+    padding: 20px;
+}
+
+.table-td {
+    font-size: 30px;
+}
+
+.table-input {
+    outline: none;
+    border: none;
+    width: 100px;
+    font-size: 23px;
+}
+
+.pay-item {
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.pay-select {
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.address-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-submit {
+    width: 100%;
+    font-size: 17px;
+    padding: 10px 0;
+    margin-top: 15px;
+    justify-content: center;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background: orangered;
+    cursor: pointer;
+}
+
+.address-item {
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.address-a-nav {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.address-in {
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.address-input {
+    outline: none;
+    border: none;
+    font-size: 17px;
+}
