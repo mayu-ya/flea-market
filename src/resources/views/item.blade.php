@@ -64,7 +64,7 @@
             <div class="profile">
                 @foreach($merchandise->comments as $comment)
                 <div class="profile-avatar">
-                    <img src="{{ asset($profile->profile_img) ?? '' }}" alt="" class="profile-img">
+                    <img src="{{ asset($comment->profile->profile_img) ?? '' }}" alt="" class="profile-img">
                     <input type="text" class="profile-input" value="{{ $comment->profile->name ?? '' }}" readonly>
                 </div>
                 <textare name="contact" class="profile-textarea" readonly>{{ $comment->contact ?? '' }}</textare>

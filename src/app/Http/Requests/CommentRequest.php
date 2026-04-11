@@ -32,7 +32,7 @@ class CommentRequest extends FormRequest
     {
         return [
             'contact.required' => 'コメントを入力してください',
-            'contacy.max' => 'コメントは255文字以下で入力してください',
+            'contact.max' => 'コメントは255文字以下で入力してください',
         ];
     }
 }
