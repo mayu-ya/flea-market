@@ -13,7 +13,7 @@
     <header>
         <div class="header">
             <div class="header-inner">
-                <a href="/"><img src="../img/logo.png" alt="COACHTECHヘッダーロゴ" class="header-logo"></a>
+                <a href="/"><img src="{{ asset('img/logo.png') }}" alt="COACHTECHヘッダーロゴ" class="header-logo"></a>
             </div>
             <form class="header-form" action="{{ route('index.seach') }}" method="get">
                 @csrf

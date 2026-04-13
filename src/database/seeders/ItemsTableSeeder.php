@@ -16,7 +16,7 @@ class ItemsTableSeeder extends Seeder
     {
         $param = [
             'profile_id' => 1,
-            'image' => 'storage/item/Armani+Mens+Clock.jpg',
+            'image' => 'item/Armani+Mens+Clock.jpg',
             'merchandise_name' => '腕時計',
             'brand_name' => 'Rolax',
             'price' => 15000,
@@ -26,7 +26,7 @@ class ItemsTableSeeder extends Seeder
         DB::table('merchandises')->insert($param);
         $param = [
             'profile_id' => 1,
-            'image' => 'storage/item/HardDisk.jpg',
+            'image' => 'item/HardDisk.jpg',
             'merchandise_name' => 'HDD',
             'brand_name' => '西芝',
             'price' => 5000,
@@ -36,7 +36,7 @@ class ItemsTableSeeder extends Seeder
         DB::table('merchandises')->insert($param);
         $param = [
             'profile_id' => 1,
-            'image' => 'storage/item/iLoveIMG.jpg',
+            'image' => 'item/iLoveIMG.jpg',
             'merchandise_name' => '玉ねぎ3束',
             'brand_name' => 'なし',
             'price' => 300,
@@ -46,7 +46,7 @@ class ItemsTableSeeder extends Seeder
         DB::table('merchandises')->insert($param);
         $param = [
             'profile_id' => 1,
-            'image' => 'storage/item/Leather+Shoes+Product+Photo.jpg',
+            'image' => 'item/Leather+Shoes+Product+Photo.jpg',
             'merchandise_name' => '革靴',
             'price' => 4000,
             'explanation' => 'クラシックなデザインの革靴',
@@ -55,7 +55,7 @@ class ItemsTableSeeder extends Seeder
         DB::table('merchandises')->insert($param);
         $param = [
             'profile_id' => 1,
-            'image' => 'storage/item/Living+Room+Laptop.jpg',
+            'image' => 'item/Living+Room+Laptop.jpg',
             'merchandise_name' => 'ノートPC',
             'price' => 45000,
             'explanation' => '高性能なノートパソコン',
@@ -64,7 +64,7 @@ class ItemsTableSeeder extends Seeder
         DB::table('merchandises')->insert($param);
         $param = [
             'profile_id' => 1,
-            'image' => 'storage/item/Music+Mic+4632231.jpg',
+            'image' => 'item/Music+Mic+4632231.jpg',
             'merchandise_name' => 'マイク',
             'brand_name' => 'なし',
             'price' => 8000,
@@ -74,7 +74,7 @@ class ItemsTableSeeder extends Seeder
         DB::table('merchandises')->insert($param);
         $param = [
             'profile_id' => 1,
-            'image' => 'storage/item/Purse+fashion+pocket.jpg',
+            'image' => 'item/Purse+fashion+pocket.jpg',
             'merchandise_name' => 'ショルダーバッグ',
             'price' => 3500,
             'explanation' => 'おしゃれなショルダーバッグ',
@@ -83,7 +83,7 @@ class ItemsTableSeeder extends Seeder
         DB::table('merchandises')->insert($param);
         $param = [
             'profile_id' => 1,
-            'image' => 'storage/item/Tumbler+souvenir.jpg',
+            'image' => 'item/Tumbler+souvenir.jpg',
             'merchandise_name' => 'タンブラー',
             'brand_name' => 'なし',
             'price' => 500,
@@ -93,7 +93,7 @@ class ItemsTableSeeder extends Seeder
         DB::table('merchandises')->insert($param);
         $param = [
             'profile_id' => 1,
-            'image' => 'storage/item/Waitress+with+Coffee+Grinder.jpg',
+            'image' => 'item/Waitress+with+Coffee+Grinder.jpg',
             'merchandise_name' => 'コーヒーミル',
             'brand_name' => 'Starbacks',
             'price' => 4000,
@@ -103,7 +103,7 @@ class ItemsTableSeeder extends Seeder
         DB::table('merchandises')->insert($param);
         $param = [
             'profile_id' => 1,
-            'image' => 'storage/item/makeupset.jpg',
+            'image' => 'item/makeupset.jpg',
             'merchandise_name' => 'メイクセット',
             'price' => 2500,
             'explanation' => '便利なメイクアップセット',

@@ -2,7 +2,9 @@
 
 ## Dockerビルド
 
-・git clone git@github.com:mayu-ya/flea-market.git
+・git clone [git@github.com:mayu-ya/flea-market.git](https://github.com/mayu-ya/flea-market.git)
+
+・cd flea-market
 
 ・docker-compose up -d --build
 
@@ -15,23 +17,23 @@
 ・cp .env.example .env
 
 ・.envファイル
+
+```.env
+# この箇所を変更
 DB_CONNECTION=mysql
-
 DB_HOST=mysql
-
 DB_PORT=3306
-
 DB_DATABASE=laravel_db
-
 DB_USERNAME=laravel_user
-
 DB_PASSWORD=laravel_pass
 
-この箇所を変更
+# パーミッションエラーで変更できない場合は、コンテナを抜けて以下を実行する
+# sudo chmod -R 777 ./src
+```
 
 ・php artisan key:generate
 
-・php artisan migrate
+・php artisan migrate:fresh
 
 ・php artisan db:seed
 
