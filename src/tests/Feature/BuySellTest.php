@@ -89,6 +89,26 @@ class BuySellTest extends TestCase
         $response->assertSee($merchandise->image);
     }
 
+    public function test_pay()
+    {
+        $user = User::factory()->hasProfile()->create();
+        $merchandise = Merchandise::factory()
+            ->hasCategories(1)
+            ->create();
+
+        $item_id = $merchandise->id;
+
+        $response = $this->actingAs($user)->get("/purchase/{$item_id}")->assertStatus(200);
+        $response = $this->from("/purchase/{$item_id}")
+                    ->post('/purchase/ajax', ['pay' => 1]);
+
+        $response = $this->get("/purchase/{$item_id}");
+
+        $paytext = [1 => 'コンビニ払い', 2 => 'カード支払い'];
+        $paydata = $paytext[1];
+        $response->assertSee($paydata);
+    }
+
     public function test_address()
     {
         $user = User::factory()->hasProfile()->create();

@@ -66,6 +66,62 @@ class ItemTest extends TestCase
         $response->assertSee($category->content);
     }
 
+    public function test_like()
+    {
+        $user = User::factory()->hasProfile()->create();
+        $merchandise = Merchandise::factory()
+            ->hasCategories(3)
+            ->create();
+        $item_id = $merchandise->id;
+        $id = $merchandise->id;
+
+        $response = $this->actingAs($user)->get("/item/{$item_id}")->assertStatus(200);
+        $response = $this->get("/reply/like/{$id}")->assertStatus(302);
+
+        $response = $this->assertDatabaseHas('likes', [
+                        'profile_id' => $user->profile->id,
+                        'merchandise_id' => $merchandise->id
+        ]);
+        $this->assertDatabaseCount('likes', 1);
+        
+    }
+
+    public function test_like_img()
+    {
+        $user = User::factory()->hasProfile()->create();
+        $merchandise = Merchandise::factory()
+            ->hasCategories(3)
+            ->create();
+        $item_id = $merchandise->id;
+        $id = $merchandise->id;
+
+        $response = $this->actingAs($user)->get("/item/{$item_id}")->assertStatus(200);
+        $response = $this->from("/item/{$item_id}")->get("/reply/like/{$id}");
+
+        $response = $this->get("/item/{$item_id}")
+                 ->assertSee('img/heart-logo-p.png');
+    }
+
+    public function test_unlike()
+    {
+        $user = User::factory()->hasProfile()->create();
+        $merchandise = Merchandise::factory()
+            ->hasCategories(3)
+            ->create();
+        $item_id = $merchandise->id;
+        $id = $merchandise->id;
+
+        $response = $this->actingAs($user)->get("/item/{$item_id}")->assertStatus(200);
+        $response = $this->get("/reply/like/{$id}")->assertStatus(302);
+        $response = $this->get("/reply/unlike/{$id}")->assertStatus(302);
+
+        $response = $this->assertDatabaseMissing('likes', [
+                        'profile_id' => $user->profile->id,
+                        'merchandise_id' => $merchandise->id
+        ]);
+        $this->assertDatabaseCount('likes', 0);
+    }
+
     public function test_comment_submit()
     {
         $user = User::factory()->hasProfile()->create();
@@ -85,6 +141,7 @@ class ItemTest extends TestCase
         $response = $this->assertDatabaseHas('comments', [
                         'contact' => 'サンプルテスト',
         ]);
+        $this->assertDatabaseCount('comments', 1);
     }
 
     public function test_comment_noauth()

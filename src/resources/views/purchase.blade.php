@@ -45,13 +45,6 @@
         <div class="button">
             <button class="button-submit" type="submit">購入する</button>
         </div>
-        @if($errors->any())
-        <ul>
-            @foreach($errors->all() as $error)
-            <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-        @endif
     </div>
     <div class="content">
         <div class="address">
