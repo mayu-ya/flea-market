@@ -1,0 +1,17 @@
+.content {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.content-h {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.content-a {
+    display: flex;
+    justify-content: center;
+}
