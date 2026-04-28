@@ -11,9 +11,11 @@
     </h2>
     <h2 class="content-h">メール認証を完了してください。</h2>
     <form action="" class="form">
+        @csrf
         <button class="button-form">認証はここから</button>
     </form>
-    <form action="" class="email">
+    <form action="{{ route('verification.send') }}" class="email" method="post">
+        @csrf
         <button class="button-email">認証メールを再送する</button>
     </form>
 </div>
