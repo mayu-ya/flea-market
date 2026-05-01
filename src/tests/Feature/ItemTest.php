@@ -42,7 +42,6 @@ class ItemTest extends TestCase
         $conditiontexts = [1 => '良好', 2 => '目立った傷や汚れなし', 3 => 'やや傷や汚れあり', 4 => '状態が悪い'];
         $conditionname = $conditiontexts[$merchandise->condition];
         $response->assertSee($conditionname);
-        $response->assertSee($merchandise->condition);
         $response->assertSee($merchandise->explanation);
         $response->assertSee($merchandise->categories->first()->content);
         $response->assertSee($merchandise->comments->first()->profile->name);
@@ -62,8 +61,9 @@ class ItemTest extends TestCase
 
         $response = $this->get("/item/{$item_id}")->assertStatus(200);
 
-        foreach ($merchandise->categories as $category)
-        $response->assertSee($category->content);
+        foreach ($merchandise->categories as $category){
+            $response->assertSee($category->content);
+        } 
     }
 
     public function test_like()

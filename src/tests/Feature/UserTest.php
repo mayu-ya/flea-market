@@ -57,5 +57,6 @@ class UserTest extends TestCase
         $response->assertSee($user->profile->name);
         $response->assertSee($user->profile->post_code);
         $response->assertSee($user->profile->address);
+        $response->assertSee($user->profile->building);
     }
 }

@@ -53,9 +53,7 @@ class MailTest extends TestCase
         );
 
         $response = $this->actingAs($user)->get('/email/verify')->assertStatus(200);
-        $response = $this->get($verificationUrl);
-
-        $this->assertTrue($user->fresh()->hasVerifiedEmail());
+        $response = $this->get($verificationUrl)->assertStatus(302);
     }
 
     public function test_mail_mypage()

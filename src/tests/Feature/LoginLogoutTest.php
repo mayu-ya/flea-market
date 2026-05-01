@@ -59,6 +59,13 @@ class LoginLogoutTest extends TestCase
 
     public function test_password()
     {
+        $user = User::factory()->create([
+            'email' => 'test@example.com',
+            'password' => Hash::make('password123'),
+        ]);
+
+        $response = $this -> post('/logout');
+
         $response = $this->get('/login')->assertStatus(200);
 
         $response = $this->from('/login')
