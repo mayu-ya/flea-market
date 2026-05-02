@@ -45,6 +45,8 @@ DB_PASSWORD=laravel_pass
 
 ・phpMyadmin:http://localhost:8080
 
+・mailhog:http://localhost:8025
+
 ## 使用技術(実行環境)
 
 ・PHP:8.1-fpm
@@ -54,6 +56,10 @@ DB_PASSWORD=laravel_pass
 ・MYSQL:8.0.26
 
 ・nginx:1.21.1
+
+・stripe
+
+・mailhog
 
 ## ER図
 
