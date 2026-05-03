@@ -25,8 +25,8 @@
                 <div class="font">
                     <div class="name">{{ $merchandise->merchandise_name }}</div>
                     <div class="sold">
-                        @if($merchandise->purchase)
-                       <p class="sold-p">sold</p>
+                       @if($merchandise->purchase)
+                           <p class="sold-p">sold</p>
                        @endif
                     </div>
                 </div>

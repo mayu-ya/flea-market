@@ -23,9 +23,9 @@
             <div class="img">
                 <div>
                     @if($merchandise->is_liked_by_auth_user())
-                        <a href="{{ route('reply.unlike', ['id' => $merchandise->id]) }}"><img src="../img/heart-logo-p.png" alt="" class="img-unlike"><span class="img-span">{{ $merchandise->likes->count() }}</span></a>
+                        <a href="{{ route('reply.unlike', ['id' => $merchandise->id]) }}"><img src="../img/heart-logo-p.png" alt="いいね" class="img-unlike"><span class="img-span">{{ $merchandise->likes->count() }}</span></a>
                     @else
-                        <a href="{{ route('reply.like', ['id' => $merchandise->id]) }}"><img src="../img/heart-logo.png" alt="" class="img-like"><span class="img-span">{{ $merchandise->likes->count() }}</span></a>
+                        <a href="{{ route('reply.like', ['id' => $merchandise->id]) }}"><img src="../img/heart-logo.png" alt="いいね(登録済)" class="img-like"><span class="img-span">{{ $merchandise->likes->count() }}</span></a>
                     @endif
                 </div>
                 <div>
@@ -86,6 +86,5 @@
             </div>
         </form>
     </div>
-    
 </div>
 @endsection
